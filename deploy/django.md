@@ -15,14 +15,14 @@
 
 ## Create Oracle Cloud instance  
 
-Go to the [instances section](https://cloud.oracle.com/compute/instances) and create an instance.    
+Go to the [instances section](https://cloud.oracle.com/compute/instances) and create an instance.  
 
 ![oci_dashboard](https://github.com/dennyb87/elettrotecnica-serale/assets/7195133/06f79827-0c98-449a-940b-b998d75f0d2b)  
 ![oci_create_instance](https://github.com/dennyb87/elettrotecnica-serale/assets/7195133/c2e66b6f-6d67-4a91-867e-150b9b3729d6)  
 ![oci_image_shape](https://github.com/dennyb87/elettrotecnica-serale/assets/7195133/00aa4f24-2e81-43bb-916a-b3f44add215d)  
 ![oci_private_key](https://github.com/dennyb87/elettrotecnica-serale/assets/7195133/82dffafa-a35a-441b-8880-6da94aa10ef5)  
 
-You can play with the configuration changing image or adding a block volume (persistent storage), just remember to download the `private key` to access the instance via:  
+You can play with the configuration changing image or adding a block volume (persistent storage) incurring in zero costs as long as you're using **Always Free** services and resources. Finally remember to download the `private key` to access the instance via:  
 
 ```
 chmod 600 private.key
