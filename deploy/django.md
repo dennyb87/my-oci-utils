@@ -1,5 +1,15 @@
 # Deploy a Django app via Oracle Cloud Infrastracture  
 
+```mermaid
+flowchart LR
+    subgraph oracle cloud instance
+        nginx<-->gunicorn<-->django
+    end
+    client_x["client x"]<--"https"-->nginx
+    client_y["client y"]<--"https"-->nginx
+    client_z["client z"]<--"https"-->nginx
+```
+
 - [Deploy a Django app via Oracle Cloud Infrastracture](#deploy-a-django-app-via-oracle-cloud-infrastracture)
   - [Create Oracle Cloud instance](#create-oracle-cloud-instance)
   - [Create DuckDNS domain](#create-duckdns-domain)
