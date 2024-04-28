@@ -185,28 +185,28 @@ Here the nginx configuration.
 server {
     listen 80;
     server_name mylovelyapp.duckdns.org;
-    
+
     location /static {
-		alias /home/ubuntu/mysite/static;
-	}
+        alias /home/ubuntu/mysite/static;
+    }
 
-	location / {
-		include proxy_params;
-		proxy_pass "http://127.0.0.1:8000";
-	}
-
+    location / {
+        include proxy_params;
+        proxy_pass "http://127.0.0.1:8000";
+    }
+    
     # managed by Certbot - start
-	listen [::]:443 ssl ipv6only=on;
-	listen 443 ssl;
-	ssl_certificate /etc/letsencrypt/live/mylovelyapp.duckdns.org/fullchain.pem;
-	ssl_certificate_key /etc/letsencrypt/live/mylovelyapp.duckdns.org/privkey.pem;
-	include /etc/letsencrypt/options-ssl-nginx.conf;
-	ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+    listen [::]:443 ssl ipv6only=on;
+    listen 443 ssl;
+    ssl_certificate /etc/letsencrypt/live/mylovelyapp.duckdns.org/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/mylovelyapp.duckdns.org/privkey.pem;
+    include /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
     # managed by Certbot - end
 
-	if ($scheme = http) {
-		return 301 https://$server_name$request_uri;
-	}
+    if ($scheme = http) {
+        return 301 https://$server_name$request_uri;
+    }
 }
 ```
 
