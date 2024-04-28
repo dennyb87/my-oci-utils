@@ -210,7 +210,7 @@ server {
 }
 ```
 
-Note that the part `# managed by Certbot` can be copied from the default configuration which can now be unlinked.  
+Note that the part `# managed by Certbot` can be copied from the default configuration which can now be unlinked from the enabled sites.  
 
 ```
 sudo unlink /etc/nginx/sites-enabled/default
