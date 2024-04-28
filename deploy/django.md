@@ -39,10 +39,11 @@ chmod 600 private.key
 ssh -i private.key <username>@<instance-ip-address>
 ```
 
-The `ip address` of the instance can be found in the [instance details](https://cloud.oracle.com/compute/instances) as well as the `username`.  
+The `ip address` of the instance can be found in the [instance details](https://cloud.oracle.com/compute/instances) as well as the `username`. If you selected the `Ubuntu 22.04` image then it'll look something like:  
 
-> This guide assumes the image to be Ubuntu 22.04 where `username` is `ubuntu`  
-
+```
+ssh -i private.key ubuntu@111.222.333.444
+```
 
 ## Create DuckDNS domain  
 
