@@ -15,11 +15,7 @@
 
 ## Create Oracle Cloud instance  
 
-First we need to [create an Oracle Cloud](https://www.oracle.com/cloud/free/) account which comes with a free tier including services you can use for an `unlimited time` such as instances, databases and storage. They will ask for a payment method (virtual or single-use cards are not accepted) but **they won't charge you**.  
-
-> Mind that the creation of the account may take about 30 minutes
-
-Once logged in we can proceed to the [instances section](https://cloud.oracle.com/compute/instances) and create an instance.    
+Go to the [instances section](https://cloud.oracle.com/compute/instances) and create an instance.    
 
 ![oci_dashboard](https://github.com/dennyb87/elettrotecnica-serale/assets/7195133/06f79827-0c98-449a-940b-b998d75f0d2b)  
 ![oci_create_instance](https://github.com/dennyb87/elettrotecnica-serale/assets/7195133/c2e66b6f-6d67-4a91-867e-150b9b3729d6)  
